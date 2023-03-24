@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "316528492042",
+    "project_id": "drivie-d0e76",
+    "storage_bucket": "drivie-d0e76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316528492042:android:362fd924d721f00a4c29f3",
+        "android_client_info": {
+          "package_name": "com.hindu.drivie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316528492042-5idkn3gnscoc70tb353p9h9robeaq54o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2BMYxkikGjb1zR8bTPaxtkavvjN35oiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316528492042-5idkn3gnscoc70tb353p9h9robeaq54o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

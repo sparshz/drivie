@@ -13,6 +13,7 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
+import com.hindu.drivie.MainActivity
 import com.hindu.drivie.R
 import kotlinx.android.synthetic.main.activity_sign_up_rider.*
 
@@ -36,9 +37,6 @@ class signUpRider : AppCompatActivity() {
         create_rider_account.setOnClickListener{
             riderSignup()
         }
-
-
-
     }
 
     private fun riderSignup(){
@@ -97,10 +95,20 @@ class signUpRider : AppCompatActivity() {
         dataMap["riderName"] = name
         dataMap["riderPhone"] = phone
         dataMap["riderPassword"] = password
-
-
-
-
+        dataMap["riderId"] = currentUserID
+        database.child(currentUserID).setValue(dataMap).addOnCompleteListener {task->
+            if (task.isSuccessful){
+                progressDialog.dismiss()
+                val intent = Intent(this@signUpRider, MainActivity::class.java)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
+                startActivity(intent)
+            }else{
+                val message = task.exception.toString()
+                Toast.makeText(this, "Some Error Occurred: $message", Toast.LENGTH_LONG).show()
+                FirebaseAuth.getInstance().signOut()
+                progressDialog.dismiss()
+            }
+        }
 
     }
 

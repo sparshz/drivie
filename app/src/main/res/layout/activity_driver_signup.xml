@@ -57,6 +57,7 @@
             />
 
         <EditText
+            android:id="@+id/fullName_Dirver"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/edittext"
@@ -81,6 +82,7 @@
             />
 
         <EditText
+            android:id="@+id/email_driver"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/edittext"
@@ -105,6 +107,7 @@
             />
 
         <EditText
+            android:id="@+id/password_direr"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/edittext"
@@ -130,6 +133,7 @@
             />
 
         <EditText
+            android:id="@+id/phone_drvier"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/edittext"
@@ -143,6 +147,7 @@
 
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/driverSignup"
             android:layout_width="215dp"
             android:layout_height="45dp"
             android:layout_gravity="center_horizontal"

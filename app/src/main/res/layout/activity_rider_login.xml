@@ -58,6 +58,7 @@
             />
 
         <EditText
+            android:id="@+id/riderEmail_login"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/edittext"
@@ -84,6 +85,7 @@
             />
 
         <EditText
+            android:id="@+id/riderPassword_signin"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/edittext"
@@ -99,11 +101,12 @@
 
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rider_login"
             android:layout_width="215dp"
             android:layout_height="45dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="70dp"
-            android:text="CREATE"
+            android:text="Sign In"
             android:background="@drawable/button_shape" />
 
 

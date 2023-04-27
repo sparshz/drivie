@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EnterDriverDetails">
+
+    <ImageView
+        android:id="@+id/topimg_dd"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/img"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/nunito"
+        android:textColor="@color/black"
+        android:text="Driver Details"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topimg_dd"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adhaar No."
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="normal"
+            android:layout_marginBottom="7dp"
+            android:textAlignment="viewStart"
+            android:textColor="#232222"
+            />
+
+        <EditText
+            android:id="@+id/driverAdhaar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:inputType="numberPassword"
+            android:hint="12345679000"
+            android:textAlignment="viewStart"
+            android:paddingLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driving License No."
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="normal"
+            android:layout_marginBottom="7dp"
+            android:textAlignment="viewStart"
+            android:textColor="#232222"
+            />
+
+        <EditText
+            android:id="@+id/dlNumber_Dirver"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:hint="UP62/250250"
+            android:inputType="textPassword"
+            android:textAlignment="viewStart"
+            android:paddingLeft="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Experience"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="normal"
+                    android:layout_marginBottom="7dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#232222"
+                    />
+
+                <EditText
+                    android:id="@+id/experience_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="in years"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#232222"
+                    />
+
+                <EditText
+                    android:id="@+id/age_driver_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:hint="40"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPassword"
+                    android:textAlignment="center"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'm able to drive"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#232222"
+            android:layout_marginStart="25dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lmv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/light_main"
+                app:cardCornerRadius="12pt"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/lmv_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:text="LMV"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/muv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/light_main"
+                app:cardCornerRadius="12pt"
+                android:background="@drawable/vehicle_type_light"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/muv_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="MUV"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/suv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/light_main"
+                app:cardCornerRadius="12pt"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/suv_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="SUV"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hatchback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/light_main"
+                app:cardCornerRadius="12pt"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/hatchback_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Hatchback"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sedan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/light_main"
+                app:cardCornerRadius="12pt"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/sedan_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Sedan"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit_btn_driverDetails"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="25dp"
+            android:background="@drawable/button_shape"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

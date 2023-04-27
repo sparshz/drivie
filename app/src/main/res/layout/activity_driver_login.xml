@@ -58,6 +58,7 @@
             />
 
         <EditText
+            android:id="@+id/driverEmail_signIn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/edittext"
@@ -84,6 +85,7 @@
             />
 
         <EditText
+            android:id="@+id/driverPassword_signIn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/edittext"
@@ -99,6 +101,7 @@
 
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/driverSignInBtn"
             android:layout_width="215dp"
             android:layout_height="45dp"
             android:layout_gravity="center_horizontal"
